@@ -3,6 +3,13 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const db = require("./db");
+
+app.use(
+  cors({
+    origin: "http://localhost:3001/", // Replace with your frontend domain
+  })
+);
+
 //importing router files
 const authRoutes = require("./routes/authRoutes");
 const profileRoutes = require("./routes/profileRoutes");

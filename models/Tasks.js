@@ -4,6 +4,10 @@ const bcrypt = require("bcrypt");
 //define the worker profile schema
 const tasksSchema = new mongoose.Schema({
   taskName: { type: String, required: true },
+  userId: {
+    type: String,
+    required: true,
+  },
   createdOn: { type: Date, default: Date.now },
   lastUpdated: { type: Date, default: Date.now },
   taskItems: [

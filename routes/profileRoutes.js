@@ -34,11 +34,14 @@ const { jwtAuthMiddleware, generateToken } = require("../jwt");
 //   }
 // });
 
-//get profile
+//get profile  need to remove this
 router.get("/getProfile", async (req, res) => {
   try {
     //get the profile from database
-    const data = await Profile.find();
+    const email = req.query.email;
+    const data = await Profile.findOne({ email: email });
+    console.log(email);
+
     console.log("profile data is fetched");
     res.status(200).json(data);
   } catch (err) {
