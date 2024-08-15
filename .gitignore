@@ -1,3 +1,4 @@
 #ignore directories
 node_modules/
 .env
+.vercel

@@ -50,6 +50,10 @@ router.get("/getProfile", async (req, res) => {
   }
 });
 
+router.get("/helloWorld", async (req, res) => {
+  res.send("Hello world");
+});
+
 //update profile
 router.put("/updateProfile/:id", async (req, res) => {
   try {
