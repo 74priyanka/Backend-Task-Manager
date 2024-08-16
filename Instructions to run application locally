@@ -1,0 +1,12 @@
+Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+Node.js (v18.0.0 or higher) - Download Node.js
+npm (v8.0.0 or higher) - Comes bundled with Node.js. Learn more about npm
+MongoDB (v5.0.0 or higher) - Install MongoDB or use a cloud service like MongoDB Atlas
+Git (optional, for version control and cloning the repository) - Download Git
+Installation
+Clone the repository
+git clone https://github.com/yourusername/your-repository-name.git
+Navigate to the project directory:
+cd your-repository-name
